@@ -1,0 +1,8 @@
+msgid "plugins.generic.maintenancemode.displayName"
+msgstr "Modo Mantenimiento"
+
+msgid "plugins.generic.maintenancemode.description"
+msgstr "Creando un archivo .maintenance en tu directorio raiz activas el modo Mantenimiento."
+
+msgid "plugins.generic.maintenancemode.underMaintenance"
+msgstr "Actualmente este sistema está en modo mantenimiento!"

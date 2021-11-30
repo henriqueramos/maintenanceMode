@@ -13,8 +13,8 @@
  * @brief Maintenance Mode's plugin class
  */
 
-import('lib.pkp.classes.core.Core');
-import('lib.pkp.classes.plugins.GenericPlugin');
+use PKP\core\Core;
+use PKP\plugins\GenericPlugin;
 
 class MaintenanceModePlugin extends GenericPlugin
 {

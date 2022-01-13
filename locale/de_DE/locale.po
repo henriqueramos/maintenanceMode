@@ -1,0 +1,8 @@
+msgid "plugins.generic.maintenancemode.displayName"
+msgstr "Wartungsmodus"
+
+msgid "plugins.generic.maintenancemode.description"
+msgstr "Das Anlegen einer .maintenance-Datei im Wurzelverzeichnis aktiviert den Wartungsmodus."
+
+msgid "plugins.generic.maintenancemode.underMaintenance"
+msgstr "Dieses System befindet sich zur Zeit im Wartungsmodus!"

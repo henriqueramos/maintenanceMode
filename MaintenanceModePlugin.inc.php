@@ -111,9 +111,9 @@ class MaintenanceModePlugin extends GenericPlugin
 
             if ($useCustomUrl && $this->customUrlIsValid($customUrl)) {
                 header('Location: ' . $customUrl, true, 307);
-            } else {
-                header('HTTP/1.1 503 Service Temporarily Unavailable');
+				return;
             }
+			header('HTTP/1.1 503 Service Temporarily Unavailable');
             die(__('plugins.generic.maintenancemode.underMaintenance'));
         }
     }
@@ -126,7 +126,7 @@ class MaintenanceModePlugin extends GenericPlugin
      */
     public function customUrlIsValid(?string $customUrl): bool
     {
-        $baseUrl = \Config::getVar('general', 'base_url');
+        $baseUrl = Config::getVar('general', 'base_url');
 
         if (!$customUrl || strpos($customUrl, $baseUrl) !== false) {
             return false;
